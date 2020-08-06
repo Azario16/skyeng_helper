@@ -1,10 +1,11 @@
-document.querySelectorAll("vim-core-lesson-list-student-selector-item")[0].children[0].children[0].outerHTML+= `<div _ngcontent-vbq-c242="" skyuitooltip="" skyuitooltipposition="below" class="remove"><sky-ui-icon _ngcontent-vbq-c242="" name="new/cross-circle-fill" size="s" _nghost-vbq-c11="" class="-size-s"><svg _ngcontent-vbq-c11=""><use _ngcontent-vbq-c11="" xlink:href="#new/cross-circle-fill"></use></svg><!----><!----></sky-ui-icon></div>`
+a = document.querySelectorAll(`.root.-selected.-accented`)[0].attributes[0].nodeName
+document.querySelectorAll("vim-core-lesson-list-student-selector-item")[0].children[0].children[0].outerHTML+= `<div `+ a +`="" skyuitooltip="" skyuitooltipposition="below" class="remove"><sky-ui-icon `+ a +`="" name="new/cross-circle-fill" size="s" _nghost-vbq-c11="" class="-size-s"><svg `+ a +`=""><use `+ a +`="" xlink:href="#new/cross-circle-fill"></use></svg><!----><!----></sky-ui-icon></div>`
 
 let mstl = document.createElement('style');
 document.body.append(mstl);
 var style = `
 
-  .root[_ngcontent-vbq-c242] {
+.root[`+ a +`] {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -14,7 +15,7 @@ var style = `
     cursor: pointer;
   }
   
-  .remove[_ngcontent-vbq-c242] {
+  .remove[`+ a +`] {
     position: absolute;
     top: -2px;
     left: calc(50% + 4px);
@@ -30,15 +31,15 @@ var style = `
     z-index: 1;
   }
   
-  .root[_ngcontent-vbq-c242]:hover   .remove[_ngcontent-vbq-c242] {
+  .root[`+ a +`]:hover   .remove[`+ a +`] {
     display: block;
   }
   
-  .remove[_ngcontent-vbq-c242]:hover {
+  .remove[`+ a +`]:hover {
     opacity: 1;
   }
   
-  .icon[_ngcontent-vbq-c242] {
+  .icon[`+ a +`] {
     position: relative;
     display: flex;
     justify-content: center;
@@ -50,11 +51,11 @@ var style = `
     fill: var(--sky-ui-kit-color-text-inversed);
   }
   
-  .icon[_ngcontent-vbq-c242]:hover {
+  .icon[`+ a +`]:hover {
     background-color: rgba(var(--sky-ui-kit-color-background-baseRgb), 0.32);
   }
   
-  .root.-selected[_ngcontent-vbq-c242]   .icon[_ngcontent-vbq-c242]::before {
+  .root.-selected[`+ a +`]   .icon[`+ a +`]::before {
     content: "";
     position: absolute;
     top: calc(50% - 26px);
@@ -66,7 +67,7 @@ var style = `
     box-sizing: border-box;
   }
   
-  .title[_ngcontent-vbq-c242] {
+  .title[`+ a +`] {
     font-size: var(--sky-ui-kit-font-size-h6-fontSize);
     line-height: var(--sky-ui-kit-font-size-h6-lineHeight);
     font-weight: var(--sky-ui-kit-font-size-h6-fontWeight);
@@ -79,7 +80,7 @@ var style = `
     opacity: .8;
   }
   
-  .root.-accented[_ngcontent-vbq-c242]   .title[_ngcontent-vbq-c242] {
+  .root.-accented[`+ a +`]   .title[`+ a +`] {
     opacity: 1;
   }
   [_nghost-vbq-c11] {
@@ -93,7 +94,7 @@ var style = `
     height: inherit;
   }
   
-  [_nghost-vbq-c11]   div[_ngcontent-vbq-c11] {
+  [_nghost-vbq-c11]   div[`+ a +`] {
     width: inherit;
     height: inherit;
   }
