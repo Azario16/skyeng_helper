@@ -1,4 +1,5 @@
-var room_hash = await lesson_room()
+//сделать чтобы Хэш комнаты тянулся из адресной строки
+var room_hash = '' //хэш комнаты
 //функция для join комнаты 
 async function lesson_st(){
     return new Promise(resolve => {
