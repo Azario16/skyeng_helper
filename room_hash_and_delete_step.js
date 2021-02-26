@@ -1,5 +1,7 @@
-//сделать чтобы Хэш комнаты тянулся из адресной строки
-var room_hash = '' //хэш комнаты
+adr = document.location.href
+adr1 = document.location.pathname
+adr1 = adr1.split('/')
+var room_hash = adr1[2];
 //функция для join комнаты 
 async function lesson_st(){
     return new Promise(resolve => {
