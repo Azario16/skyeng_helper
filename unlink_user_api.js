@@ -29,7 +29,7 @@ window.onload = function pain() {
                                     //Запрос на удаление
 
                                     fetch("https://rooms.vimbox.skyeng.ru/users/api/v1/teachers/unlink-student/" + userid + "", { "credentials": "include", "method": "POST", });
-                                    i = i + 1; if (i < a) setTimeout(f, "100");
+                                    i = i + 1; if (i < a) setTimeout(f, "450");
                                 };
                                 f();
                             });
