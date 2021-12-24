@@ -1,4 +1,4 @@
-window.onload = function pain() {
+
     console.log('1')
 
     var oldBtn = document.querySelector('div[skyuitooltip][skyuitooltipposition="below"]');
@@ -48,4 +48,4 @@ window.onload = function pain() {
             console.log('Не удаляем')
         }
     }, 2000);
-};
+
